@@ -26,6 +26,7 @@ In this project, a collection of 1,951 chest X-ray images acquired from children
 
 ## Result
 ![image](https://github.com/alicewoo0925/pneumonia/assets/48823257/2a28af18-5297-4c44-b416-e8a7bbec38a0)
+
 As a result, we accomplished satisfactory prediction performances with our models. Image features extracted using the pre-trained ResNet50 model demonstrated superior predictive performance across all models. By utilising relatively small dataset and traditional machine learning models, we were able to achieve exceptional processing speeds. On average, the entire processes including training and prediction were completed within 1 minute.
 
 However, none of models reaches the accuracy of 90%, which may lead to the limitation of applying to the medical field. In future work, Stratified K-fold cross validation can be used to improve the performance by balancing dataset although it will create a new test set with different combinations. Segmentation mask also can be applied to the images in order to extract the features only from lungs, while reducing interference with bones, other tissues and artifacts. As CNN has been reported high performance with high accuracy, sensitivity and specificity, ResNet50 or VGG16 can be tried for the classification.
